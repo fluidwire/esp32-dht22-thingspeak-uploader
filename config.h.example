@@ -1,0 +1,16 @@
+// config.h.example - copy this file to config.h and fill in your own values.
+// config.h is .gitignore'd so your secrets never leave your machine.
+
+#pragma once
+
+// --- WiFi -------------------------------------------------------------------
+#define WIFI_SSID      "your-wifi-ssid"
+#define WIFI_PASSWORD  "your-wifi-password"
+
+// --- ThingSpeak -------------------------------------------------------------
+// Create a channel at https://thingspeak.com with 3 fields
+// (Field 1 = Temperature, Field 2 = Humidity, Field 3 = Heat index).
+// Channel ID is the numeric ID; the Write API Key is on the channel's
+// "API Keys" tab. Keep the write key private.
+#define TS_CHANNEL_ID      1234567UL
+#define TS_WRITE_API_KEY   "YOURWRITEAPIKEY"
